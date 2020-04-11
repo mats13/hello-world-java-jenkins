@@ -1,11 +1,13 @@
-peline {
+pipeline {
     agent any
 	    stages {
 		        stage("clone") {
 				            steps {
-							                sh "rm -rf *"
-											                sh "git clone https://github.com/mats13/hello-world-java-jenkins"
-															            }
+							                
+						    sh "rm -rf *"
+											                
+						    sh "git clone https://github.com/mats13/hello-world-java-jenkins"
+						 }
 																		        }
 																				        stage("build") {
 																						            steps {
